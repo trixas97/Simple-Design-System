@@ -1,21 +1,17 @@
 {
-  "name": "@ds.e/core",
+  "name": "@ds.e/foundation",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx lerna run build",
-    "dev": "npx lerna run dev"
+    "build": "tsc",
+    "dev": "npm run build -- -w"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "lerna": "^5.5.2"
-  },
-  "workspaces": [
-    "packages/*",
-    "playgrounds/*"
-  ]
+    "typescript": "^4.8.3"
+  }
 }
