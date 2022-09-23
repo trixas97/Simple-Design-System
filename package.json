@@ -6,16 +6,24 @@
   "scripts": {
     "test": "npx lerna run test",
     "build": "npx lerna run build",
-    "dev": "npx lerna run dev"
+    "dev": "npx lerna run dev",
+    "commit": "npx git-cz"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
     "lerna": "^5.5.2"
   },
   "workspaces": [
     "packages/*",
     "playgrounds/*"
-  ]
+  ],
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
 }
